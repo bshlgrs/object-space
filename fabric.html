@@ -1,11 +1,24 @@
 <!DOCTYPE HTML>
 <html>
+  <head>
+    <style>
+      #container {background-color: honeydew;}
+    </style>
+  </head>
   <body>
     <div id="container">
-      <canvas id="c" width="500" height="500"></canvas>
+      <canvas id="c" width="1000" height="500"></canvas>
     </div>
+    <input id="thing">
+    <button id="add-thing">Add number!</button>
+
+    <button onclick="rerender">Rerender</button>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="./fabric.js" defer></script>
-    <script type="text/javascript" src="./fabric_example.js" defer></script>
+    <script type="text/javascript" src="./parser.js" defer></script>
+    <script type="text/javascript" src="./object_space.js" defer></script>
+    <script type="text/javascript" src="./ui.js" defer></script>
+
+
   </body>
 </html>

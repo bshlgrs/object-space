@@ -86,6 +86,10 @@ function postDrawCell(position, value) {
   }
 }
 
+var drawAFuckingLine = function(x1, y1, x2, y2) {
+  canvas.add(new fabric.Line([x1,y1,x2,y2], { stroke: "red", left: x1, top: y1 }));
+}
+
 memory = [["pointer", 0]];
 
 var renderMemory = function () {
